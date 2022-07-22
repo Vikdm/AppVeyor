@@ -60,16 +60,16 @@ class MobileBankApiTestV3 {
 
     }
 
-    @Test
-    void validCurrency1() {
-        given()
-                .baseUri("http://localhost:9999/api/v1")
-                .when()
-                .get("/demo/accounts")
-                .then()
-                .contentType(ContentType.JSON)
-
-                .body("[0].currency", equalTo("RUR"))
-        ;
-    }
+//    @Test
+//    void validCurrency1() {
+//        given()
+//                .baseUri("http://localhost:9999/api/v1")
+//                .when()
+//                .get("/demo/accounts")
+//                .then()
+//                .contentType(ContentType.JSON)
+//
+//                .body("[0].currency", equalTo("RUR"))
+//        ;
+//    }
 }
