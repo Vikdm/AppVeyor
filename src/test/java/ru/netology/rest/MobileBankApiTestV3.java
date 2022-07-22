@@ -44,4 +44,19 @@ class MobileBankApiTestV3 {
 //                .body("[2].id", equalTo("12"))
 //        ;
 //    }
+
+    @Test
+    void validCurrency (){
+        given()
+                .baseUri("http://localhost:9999/api/v1")
+                .when()
+                .get("/demo/accounts")
+                .then()
+                .contentType(ContentType.JSON)
+
+                .body("[0].currency", equalTo("RUB"))
+                .body("[1].currency", equalTo("USD"))
+              ;
+
+    }
 }
