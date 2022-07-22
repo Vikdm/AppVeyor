@@ -28,20 +28,20 @@ class MobileBankApiTestV3 {
           .body("[0].balance", greaterThanOrEqualTo(0))
       ;
     }
-    @Test
-    void shouldReturnDemoAccounts1() {
-        // Given - When - Then
-        // Предусловия
-        given()
-                .baseUri("http://localhost:9999/api/v1")
-
-                .when()
-                .get("/demo/accounts")
-                .then()
-                .statusCode(200)
-
-                .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
-                .body("[2].id", equalTo("12"))
-        ;
-    }
+//    @Test
+//    void shouldReturnDemoAccounts1() {
+//        // Given - When - Then
+//        // Предусловия
+//        given()
+//                .baseUri("http://localhost:9999/api/v1")
+//
+//                .when()
+//                .get("/demo/accounts")
+//                .then()
+//                .statusCode(200)
+//
+//                .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
+//                .body("[2].id", equalTo("12"))
+//        ;
+//    }
 }
