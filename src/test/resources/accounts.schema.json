@@ -29,8 +29,9 @@
         "default": 0
       },
       "currency": {
-        "type": "USD",
-        "type": "RUB"
+        "type": "string",
+        "type_currency": { "enum": [ "RUB", "USD" ] }
+
       }
     }
   }
